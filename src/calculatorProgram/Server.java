@@ -1,11 +1,5 @@
 package calculatorProgram;
 
-import java.io.EOFException;
-
-// RECEIVE OPERATION FROM CLIENT
-// CALCULATE OPERATION IN SERVER
-// SEND RESULTS BACK TO CLIENT
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
@@ -28,8 +22,8 @@ public class Server {
     
     
             while(!closeConn){
-                // WAIT FOR A CONNECTION
-                System.out.println("Waiting for incoming connection.....");
+            // WAIT FOR A CONNECTION
+            System.out.println("Waiting for incoming connection.....");
                 Socket conn = server.accept();
         
                 System.out.println("Got a connection!");
@@ -52,8 +46,7 @@ public class Server {
                 conn.close();
             }
         } catch(IOException i){
-        }  catch(NumberFormatException ex){ 
-            System.err.println(ex);
+        } catch(NumberFormatException ex){ 
         } 
     }
 }

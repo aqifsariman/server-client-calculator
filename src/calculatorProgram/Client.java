@@ -1,11 +1,5 @@
 package calculatorProgram;
 
-// OPERAND OPERATOR OPERAND2 
-// SEND TO SERVER
-// RECEIVE FROM SERVER THE RESULTS
-// PRINT RESULTS
-// CONTINUE OR END
-
 import java.io.Console;
 import java.io.IOException;
 import java.io.InputStream;
