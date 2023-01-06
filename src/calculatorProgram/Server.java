@@ -1,5 +1,7 @@
 package calculatorProgram;
 
+import java.io.EOFException;
+
 // RECEIVE OPERATION FROM CLIENT
 // CALCULATE OPERATION IN SERVER
 // SEND RESULTS BACK TO CLIENT
@@ -50,10 +52,8 @@ public class Server {
                 conn.close();
             }
         } catch(IOException i){
-            System.err.println(i);
-        }  catch(NumberFormatException ex){ // handle your exception
+        }  catch(NumberFormatException ex){ 
             System.err.println(ex);
-        }
-
+        } 
     }
 }
